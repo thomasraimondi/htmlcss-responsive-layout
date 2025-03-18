@@ -166,7 +166,7 @@ body {
 
 /* Section Adv */
 section.adv {
-  display: block;
+  display: none;
   padding: 1rem 0;
 }
 
@@ -176,9 +176,25 @@ section.adv {
   padding: 1rem 0;
 }
 
+#recipe-presentation h2 {
+  padding: 1rem 0;
+}
+
+#recipe-presentation .border {
+  padding: 1rem 0;
+  border-top: 1px solid #f7982e;
+  width: 20%;
+}
+
 #recipe-presentation img {
   width: 70%;
-  text-align: center;
+  padding: 1rem 0;
+  margin-left: 15%;
+}
+
+#recipe-presentation p {
+  line-height: 30px;
+  font-size: 1.3rem;
 }
 
 /* Footer */
@@ -190,12 +206,19 @@ footer {
 
 footer .address span {
   display: block;
+  padding: 0.3rem 0;
 }
 
 footer .container {
   text-align: center;
+  padding: 1rem 0;
+}
+
+footer .footer-links {
+  padding: 1rem 0;
 }
 
 footer .footer-links ul li {
   display: inline-block;
+  width: 20%;
 }
