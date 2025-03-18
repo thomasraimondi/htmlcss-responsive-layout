@@ -1,8 +1,3 @@
-/* Variables */
-:root {
-  --containerW: 540px;
-}
-
 /* Reset */
 * {
   margin: 0;
@@ -38,7 +33,7 @@ body {
 }
 
 .container {
-  max-width: var(--containerW);
+  max-width: 540px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -162,6 +157,28 @@ body {
 
 #social-icons .social-item span {
   display: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#facebook {
+  color: #1a77f3;
+}
+
+#x {
+  color: black;
+}
+
+#instagram {
+  color: #e0678c;
+}
+
+#pinterest {
+  color: #e62325;
+}
+
+#youtube {
+  color: #e62322;
 }
 
 /* Section Adv */
@@ -189,7 +206,8 @@ section.adv {
 #recipe-presentation img {
   width: 70%;
   padding: 1rem 0;
-  margin-left: 15%;
+  display: block;
+  margin: 0 auto;
 }
 
 #recipe-presentation p {
@@ -210,26 +228,36 @@ footer .address span {
 }
 
 footer .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 1rem 0;
 }
 
 footer .footer-links {
-  padding: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 footer .footer-links ul li {
   display: inline-block;
-  width: 20%;
+  padding: 0 1rem;
+  margin: 0.3rem 0;
 }
+
+footer .footer-links ul li a {
+  text-decoration: underline;
+}
+
+/* dispositivi small-medium */
 
 @media screen and (min-width: 576px) {
   .container {
     max-width: 768px;
   }
   #recipe-presentation img {
+    width: 50%;
     float: left;
-    margin-left: 0;
     margin-right: 5px;
   }
   #social-icons .social-item {
@@ -237,11 +265,64 @@ footer .footer-links ul li {
   }
 }
 
+/* Dispositivi medium */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 992px;
   }
+
+  .page-title {
+    text-align: left;
+  }
+
+  #recipe-summary ul li {
+    display: inline-block;
+    width: calc(100% / 3 - 1rem);
+  }
+  #social-icons .social-item {
+    padding: 0.8rem 2.5rem;
+  }
+  section.adv {
+    display: block;
+  }
 }
 
+/* dispositivi xl */
+
 @media screen and (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  #recipe-summary .card-recipe {
+    display: flex;
+  }
+
+  #recipe-summary .card-media {
+    width: calc(100% / 4 * 3);
+  }
+  #recipe-summary .card-content {
+    width: calc(100% / 4);
+  }
+  #recipe-summary ul li {
+    display: block;
+    width: 100%;
+  }
+
+  #social-icons .social-item span {
+    display: inline-block;
+  }
+
+  #recipe-presentation img {
+    width: 30%;
+  }
+
+  footer .container {
+    max-width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
 }
