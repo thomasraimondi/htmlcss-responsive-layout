@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
 /* Reset */
 * {
   margin: 0;
@@ -19,7 +21,7 @@ ul {
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
   background-color: #f6f5f3;
 }
 
@@ -54,10 +56,11 @@ body {
   font-family: "Nerko One", cursive;
   text-align: center;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   color: #ff9613;
   background-color: white;
   margin-bottom: 15px;
+  font-weight: 400;
 }
 
 /* main */
@@ -165,7 +168,7 @@ section.adv {
 
 #recipe-presentation .border {
   padding: 1rem 0;
-  border-top: 1px solid #f7982e;
+  border-top: 3px solid #f7982e;
   width: 70px;
 }
 
