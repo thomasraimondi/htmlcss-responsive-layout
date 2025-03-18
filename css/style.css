@@ -63,25 +63,25 @@ body {
 /* main */
 
 /* Recipe-Title */
-#recipe-title {
+#recipe-details {
   color: #4e3969;
   font-size: 1.5rem;
 }
 
-#recipe-title .category {
+#recipe-details .category {
   text-transform: uppercase;
   font-weight: normal;
   color: #9f9db0;
   font-size: 1rem;
 }
 
-#recipe-title .recipe-title {
+#recipe-details .recipe-title {
   display: flex;
   gap: 5px;
   margin-bottom: 15px;
 }
 
-#recipe-title .tradition {
+#recipe-details .tradition {
   display: none;
 }
 
@@ -240,7 +240,7 @@ footer .footer-links ul li a {
     text-align: left;
   }
 
-  #recipe-title .tradition {
+  #recipe-details .tradition {
     display: inline-block;
   }
 
