@@ -53,7 +53,7 @@ body {
 .page-title {
   font-family: "Nerko One", cursive;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
   color: #ff9613;
   background-color: white;
@@ -159,12 +159,14 @@ section.adv {
 
 #recipe-presentation h2 {
   padding: 1rem 0;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 #recipe-presentation .border {
   padding: 1rem 0;
   border-top: 1px solid #f7982e;
-  width: 20%;
+  width: 70px;
 }
 
 #recipe-presentation img {
