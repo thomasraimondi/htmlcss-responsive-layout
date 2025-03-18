@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --test: 1000px;
+  --containerW: 560px;
 }
 
 /* Reset */
@@ -23,13 +23,9 @@ ul {
   list-style: none;
 }
 
-ul li {
-  display: inline-block;
-}
-
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #f6f5f3;
 }
 
 /* # UTILS */
@@ -88,4 +84,51 @@ body {
   color: white;
   padding: 5px 10px;
   border: 1px solid transparent;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+/* Header */
+
+.page-title {
+  font-family: "Nerko One", cursive;
+  text-align: center;
+  padding: 1rem;
+  color: #ff9613;
+  background-color: white;
+}
+
+/* main */
+
+/* Plate-Title */
+#recipe-title .recipe-title {
+  display: flex;
+  gap: 5px;
+}
+
+#recipe-title .tradition {
+  display: none;
+}
+
+/* Card Plate */
+#recipe-summary .card-recipe {
+  box-shadow: 0px 2px 7px 3px #c4c3c3;
+}
+
+#recipe-summary .card-content {
+  padding: 1rem;
+}
+
+#recipe-summary .card-content h2 {
+  padding: 1rem 0;
+}
+
+#recipe-summary ul li {
+  padding: 0.5rem 0;
 }
