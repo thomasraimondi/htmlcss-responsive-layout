@@ -222,3 +222,26 @@ footer .footer-links ul li {
   display: inline-block;
   width: 20%;
 }
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 768px;
+  }
+  #recipe-presentation img {
+    float: left;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  #social-icons .social-item {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
