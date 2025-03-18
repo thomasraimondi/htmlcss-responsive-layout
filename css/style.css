@@ -106,7 +106,7 @@ body {
 
 /* main */
 
-/* Plate-Title */
+/* Recipe-Title */
 #recipe-title .recipe-title {
   display: flex;
   gap: 5px;
@@ -116,7 +116,9 @@ body {
   display: none;
 }
 
-/* Card Plate */
+/* Recipe Summary */
+
+/* Card Recipe */
 #recipe-summary .card-recipe {
   box-shadow: 0px 2px 7px 3px #c4c3c3;
 }
@@ -131,4 +133,23 @@ body {
 
 #recipe-summary ul li {
   padding: 0.5rem 0;
+}
+
+/* Social Icons */
+
+#social-icons .social-items {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+
+#social-icons .social-item {
+  padding: 0.8rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 2px 7px 3px #c4c3c3;
+}
+
+#social-icons .social-item span {
+  display: none;
 }
